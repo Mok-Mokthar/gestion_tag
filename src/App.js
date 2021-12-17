@@ -39,7 +39,6 @@ function App() {
   return (
     <div className="App">
       <h1>Mes tags</h1>
-
       <form onSubmit={addTag}>
         <input type="text" value={inputTag} onChange={handleInputTag} />
         <button type="submit">OK</button>
