@@ -7,7 +7,7 @@ function App() {
   const [inputTag, setInputTag] = useState("")
 
   useEffect(() => {
-    axios.get('http://localhost:5000/tags')
+    axios.get(process.env.API_URL + '/tags')
     .then(res => {
       setTags(res.data)
     })
@@ -16,7 +16,7 @@ function App() {
   function deleteTag(id) {
     console.log(`Tag ${id} supprimé!`);
 
-    axios.delete('http://localhost:5000/tags/' +id)
+    axios.delete(process.env.API_URL + '/tags/' +id)
     .then(res=> console.log(res));
   }
 
