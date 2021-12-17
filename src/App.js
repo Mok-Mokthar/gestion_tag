@@ -25,10 +25,10 @@ function App() {
     console.log("Formulaire soumis");
 
     let newTag = {name: inputTag};
-    axios.post('http://localhost:5000/tags', newTag)
-    .then(res=>{
-      getTags();
-    })
+    // axios.post('http://localhost:5000/tags', newTag)
+    // .then(res=>{
+    //   getTags();
+    // })
     console.log(newTag);
   }
 
